@@ -35,7 +35,7 @@ checkingBtn.addEventListener("click", () => {
       message.textContent =
         guess > secretNum ? "Your number is big" : "Your number is small";
       const lastImg = images[images.length - 1];
-      lastImg.remove(); // rasmni oxirgidan o'chirish
+      lastImg.remove();
     } else if (images.length == 0) {
       message.textContent = "You Lose! 😥";
     }
@@ -74,12 +74,5 @@ input.addEventListener("input", () => {
   }
 });
 
-/*
-for (let i = images.length - 1; i >= 0; i--) {
-  if (images[i].alt !== "qoldir") {
-    images[i].remove();
-    // Agar bir dona o'chirishni xohlasang, pastdagi break qo'y
-    break;
-  }
-}
-*/
+
+/* @Qurbonoff.11 */
