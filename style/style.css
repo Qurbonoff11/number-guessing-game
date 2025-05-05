@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Space Grotesk";
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background: #252525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.heading-1{
+  font-size: 5rem;
+}
+.heading-3{
+  font-size: 1.2rem;
+}
+
+.body-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.random-number{
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.random-number .random-item{
+  color: #252525;
+  font-size: 10rem;
+  font-family: "Alfa Slab One";
+  font-weight: 800;
+  user-select: none;
+}
+.input-number {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid #252525;
+  color: #252525;
+  outline: none;
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Alfa Slab One";
+  text-align: center;
+  position: relative;
+  bottom: 80px;
+  left: 100px;
+  transition: all .3s ease-in-out;
+}
+
+.input-number:focus{
+  box-shadow: 0 0 20px #000000;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.guess-text{
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.hearts-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5rem;
+  user-select: none;
+}
+
+.hearts{
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.hearts-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: .8rem;
+}
+.heart-img{
+  width: 30px;
+  filter: drop-shadow(0 0 5px #e91111);
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.checking{
+  color: #252525;
+  font-weight: 800;
+  font-family: "Space Grotesk";
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding: .3rem 1rem;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+.again{
+  color: #252525;
+  font-weight: 800;
+  font-family: "Space Grotesk";
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding: .3rem 1rem;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+.checking:hover,
+.again:hover{
+  letter-spacing: 2px;
+}
+
+.checking:active,
+.again:active{
+  transform: scale(0.9);
+}
