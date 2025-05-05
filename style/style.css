@@ -68,7 +68,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .random-number .random-item{
   color: #252525;
-  font-size: 10rem;
+  font-size: 8rem;
   font-family: "Alfa Slab One";
   font-weight: 800;
   user-select: none;
@@ -91,7 +91,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .input-number:focus{
-  box-shadow: 0 0 20px #000000;
+  box-shadow: 0 0 10px #000000;
 }
 
 .footer-container{
@@ -141,7 +141,9 @@ input[type="number"]::-webkit-inner-spin-button {
   gap: 1.5rem;
 }
 
+.again,
 .checking{
+  background-color: #fff;
   color: #252525;
   font-weight: 800;
   font-family: "Space Grotesk";
@@ -151,18 +153,14 @@ input[type="number"]::-webkit-inner-spin-button {
   transition: all .3s ease-in-out;
   cursor: pointer;
 }
-.again{
-  color: #252525;
-  font-weight: 800;
-  font-family: "Space Grotesk";
-  font-weight: 800;
-  font-size: 1.5rem;
-  padding: .3rem 1rem;
-  transition: all .3s ease-in-out;
-  cursor: pointer;
-}
+
 .checking:hover,
 .again:hover{
+  letter-spacing: 2px;
+}
+
+.checking:active,
+.again:active{
   letter-spacing: 2px;
 }
 
