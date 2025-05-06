@@ -41,7 +41,7 @@ checkingBtn.addEventListener("click", () => {
       message.textContent = "You Lose! 😥";
     }
   } else if (guess === secretNum) {
-    message.textContent = "You Win! 🥳";
+    message.textContent = "You Won! 🥳";
     randomNum.textContent = secretNum;
   }
 });
