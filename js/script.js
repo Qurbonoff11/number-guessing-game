@@ -27,7 +27,7 @@ checkingBtn.addEventListener("click", () => {
       inputNum.style.borderColor = "";
       input.style = "box-shadow: 0 0 10px";
       inputNum.style.boxShadow = "";
-    }, 1000);
+    }, 1500);
   } else if (guess !== secretNum) {
     let images = $HTML.querySelectorAll(".heart-img");
 
@@ -36,7 +36,7 @@ checkingBtn.addEventListener("click", () => {
         guess > secretNum ? "Your number is big" : "Your number is small";
       const lastImg = images[images.length - 1];
       lastImg.remove();
-    } else if (images.length == 0) {
+    } else if (images.length === 0) {
       message.textContent = "You Lose! 😥";
     }
   } else if (guess === secretNum) {
