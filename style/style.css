@@ -160,12 +160,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .checking:hover,
 .again:hover{
-  letter-spacing: 2px;
-}
-
-.checking:active,
-.again:active{
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  padding: .2rem 1.2rem;
 }
 
 .checking:active,
