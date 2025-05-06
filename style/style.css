@@ -171,3 +171,42 @@ input[type="number"]::-webkit-inner-spin-button {
 .again:active{
   transform: scale(0.9);
 }
+
+.footer{
+  width: 100%;
+  height: 5rem;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.6rem;
+  user-select: none;
+}
+.footer .footer-box p{
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.footer .footer-box .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.footer .footer-box .social a{
+  text-decoration: none;
+  transition: all .4s ease-in-out;
+}
+.footer .footer-box .social a:hover{
+  transform: scale(1.15);
+}
+.footer .footer-box .social a img{
+  height: 1.4rem;
+}
