@@ -1,2 +1,3 @@
-# number-guessing-game
-number guessing game
+# number guessing game
+
+![screen shot](image.png)
