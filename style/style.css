@@ -43,9 +43,11 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .heading-1{
   font-size: 5rem;
+  user-select: none;
 }
 .heading-3{
   font-size: 1.2rem;
+  user-select: none;
 }
 
 .body-container{
@@ -105,6 +107,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .guess-text{
   font-size: 2rem;
   font-weight: 800;
+  user-select: none;
 }
 
 .hearts-box{

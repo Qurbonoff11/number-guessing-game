@@ -7,6 +7,7 @@ let message = $HTML.querySelector(".guess-text");
 let checkingBtn = $HTML.querySelector(".checking");
 let again = $HTML.querySelector(".again");
 let heartsContainer = $HTML.querySelector(".hearts-img");
+let input = $HTML.querySelector("#inputNum");
 
 /* RANDOM NUMBER */
 let secretNum;
@@ -62,17 +63,24 @@ again.addEventListener("click", () => {
   <img class="heart-img" src="./assets/img/heart.png" alt="heart">
   <img class="heart-img" src="./assets/img/heart.png" alt="heart">
   <img class="heart-img" src="./assets/img/heart.png" alt="heart">
-  <img class="heart-img" src="./assets/img/heart.png" alt="heart">
   `;
 });
 
 /* INPUT NUMBER LENGTH 2 FUNCTION */
-const input = document.getElementById("inputNum");
 input.addEventListener("input", () => {
   if (input.value.length > 2) {
     input.value = input.value.slice(0, 2);
   }
 });
-
+input.addEventListener("input", () => {
+  if (input.value > 0 && 20 >= input.value) {
+    inputNum.style.borderColor = "";
+    inputNum.style.boxShadow = "";
+    input.style.boxShadow = "";
+  } else {
+    inputNum.style.borderColor = "#ff0000";
+    input.style = "box-shadow: 0 0 10px #ff0000";
+  }
+});
 
 /* @Qurbonoff.11 */
