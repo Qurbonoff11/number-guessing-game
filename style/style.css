@@ -210,3 +210,108 @@ input[type="number"]::-webkit-inner-spin-button {
 .footer .footer-box .social a img{
   height: 1.4rem;
 }
+
+/* * RWD */
+
+/* Ekran 1200px dan kichik bo'lsa */
+@media (max-width: 1200px) {
+  .game-container {
+    width: 80%;
+  }
+  .heading-1 {
+    font-size: 4rem;
+  }
+  .random-number {
+    width: 200px;
+    height: 200px;
+  }
+  .random-number .random-item {
+    font-size: 6rem;
+  }
+  .input-number {
+    width: 110px;
+    height: 110px;
+    font-size: 3rem;
+    bottom: 70px;
+    left: 80px;
+  }
+}
+
+/* Ekran 992px dan kichik bo'lsa */
+@media (max-width: 992px) {
+  .heading-1 {
+    font-size: 3.5rem;
+  }
+  .random-number {
+    width: 180px;
+    height: 180px;
+  }
+  .random-number .random-item {
+    font-size: 5rem;
+  }
+  .input-number {
+    width: 100px;
+    height: 100px;
+    font-size: 2.8rem;
+    bottom: 60px;
+    left: 70px;
+  }
+  .again, .checking {
+    font-size: 1.3rem;
+    padding: .3rem .8rem;
+  }
+}
+
+/* Ekran 768px dan kichik bo'lsa (tablet) */
+@media (max-width: 768px) {
+  .game-container {
+    width: 90%;
+  }
+  .heading-1 {
+    font-size: 3rem;
+  }
+  .heading-3 {
+    font-size: 1rem;
+  }
+  .guess-text {
+    font-size: 1.8rem;
+  }
+  .hearts {
+    font-size: 1.8rem;
+  }
+  .heart-img {
+    width: 25px;
+  }
+  .again, .checking {
+    font-size: 1.2rem;
+  }
+}
+
+/* Ekran 576px dan kichik bo'lsa (telefon) */
+@media (max-width: 576px) {
+  .heading-1 {
+    font-size: 2.5rem;
+  }
+  .heading-3 {
+    font-size: 0.9rem;
+  }
+  .guess-text {
+    font-size: 1.5rem;
+  }
+  .hearts {
+    font-size: 1.5rem;
+  }
+  .heart-img {
+    width: 20px;
+  }
+  .footer .footer-box p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Ekran 400px dan kichik bo'lsa (kichkina telefonlar) */
+@media (max-width: 400px) {
+  .heading-1 {
+    font-size: 2rem;
+  }
+}
